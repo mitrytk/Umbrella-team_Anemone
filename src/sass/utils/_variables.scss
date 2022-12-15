@@ -1,0 +1,26 @@
+// font-family: 'Montserrat-Regular', sans-serif; (400)
+// font-family: 'Montserrat-Medium', sans-serif; (500)
+// font-family: 'Montserrat-SemiBold', sans-serif; (600)
+// font-family: 'Montserrat-Bold', sans-serif; (700)
+// font-family: 'Inter-Medium', sans-serif; (500)
+// font-family: 'Inter-Bold', sans-serif; (700)
+:root {
+    --brend-color: rgba(232, 111, 84, 1);
+    --white-color: rgb(255, 255, 255);
+    --black-color: rgb(0, 0, 0);
+    --logo-color: rgba(14, 14, 14, 1);
+
+    --button-hover-color: rgba(226, 91, 65, 1);
+    --button-focus-color: rgba(250, 111, 84, 1);
+    --button-blocked-color: rgba(232, 111, 84, 0.4);
+
+
+    --function-animation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$preMobile: 479.98px;
+$mobile: 480px;
+$preTablet: 767.98px;
+$tablet: 768px;
+$preDesctop: 1279.98px;
+$desctop: 1280px;

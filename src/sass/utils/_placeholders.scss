@@ -1,0 +1,114 @@
+%transition-main {
+    transition-duration: 250ms;
+    transition-timing-function: var(--function-animation);
+}
+
+%container {
+    margin: 0 auto;
+
+    @media screen and (max-width: $preTablet) {
+        max-width: 288px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 720px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        width: 1232px;
+    }
+}
+
+%section {
+    @media screen and (max-width: $preTablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+%list {
+    list-style: none;
+}
+
+%link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+// стиль загаловка с линией
+%title {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat-Bold', sans-serif;
+
+    color: var(--black-color);
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin-left: 14px;
+        background-color: var(--black-color);
+    }
+
+    @media screen and (max-width: $preTablet) {
+        font-size: 24px;
+        line-height: calc(29/24);
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 44px;
+        line-height: calc(54/44);
+    }
+
+}
+
+// Кнопка с акцентом
+%button {
+    border-radius: 38px;
+    border: none;
+    background-color: var(--brend-color);
+    color: var(--white-color);
+
+    font-family: 'Montserrat-Medium', sans-serif;
+
+    @media screen and (max-width: $preTablet) {
+        padding: 10px 35px;
+        font-size: 20px;
+        line-height: calc(20/24);
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding: 20px 69.5px;
+        font-size: 28px;
+        line-height: calc(24/28);
+    }
+
+    &:hover {
+        background-color: var(--button-hover-color);
+    }
+
+    &:focus {
+        background-color: var(--button-focus-color);
+    }
+}
+
+%address {
+    font-style: normal;
+}
+
+%tumb {
+    position: relative;
+    overflow: hidden;
+}

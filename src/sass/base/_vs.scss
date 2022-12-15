@@ -1,0 +1,26 @@
+// Позиционирует footer всегда снизу
+main {
+    @media screen and (max-width: $preTablet) {
+        min-height: calc(100vh - 612px);
+    }
+
+    @media screen and (min-width: $tablet) {
+        min-height: calc(100vh - 472px);
+    }
+
+    @media screen and (min-width: $desctop) {
+        min-height: calc(100vh - 243px);
+    }
+}
+
+// Скрыть не нарушая семантику
+.hide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
