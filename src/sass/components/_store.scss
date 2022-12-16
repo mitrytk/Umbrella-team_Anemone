@@ -1,0 +1,26 @@
+.store{
+  @extend %section;
+  @extend %container;
+
+  &__title{
+    @extend %title;
+    margin-bottom: 32px;
+  }
+  &__list{
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  &__item{
+    flex-basis:calc((100% - 16px)/2);
+  }
+
+  &__button{
+    @extend %button;
+
+
+  }
+
+
+}
