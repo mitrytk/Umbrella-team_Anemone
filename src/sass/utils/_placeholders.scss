@@ -25,12 +25,10 @@
 
 %section {
     @media screen and (max-width: $preTablet) {
-        padding-top: 60px;
         padding-bottom: 60px;
     }
 
     @media screen and (min-width: $tablet) {
-        padding-top: 100px;
         padding-bottom: 100px;
     }
 }
