@@ -1,0 +1,40 @@
+// .header {
+//   @extend %container;
+// }
+
+.header__logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__container {
+  @extend %container;
+  display: flex;
+  justify-content: center;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.nav__list {
+  @extend %list;
+  display: flex;
+  text-align: center;
+
+  gap: 48px;
+}
+
+.nav__link {
+  @extend %link;
+}
+
+.header__contakt {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12px;
+  padding-bottom: 17px;
+}
