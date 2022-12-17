@@ -1,21 +1,53 @@
 .backdrop-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100vw;
     height: 100vh;
 
     background-color: rgba(0, 0, 0, 0.3);
 
-    @media screen and (max-width: $preTablet) {
+    @media screen and (max-width: $preMobile) {
         padding-top: 90px;
         padding-right: 24px;
         padding-left: 24px;
+    }
+
+    @media screen and (min-width: $mobile) {
+        display: flex;
+        justify-content: center;
+        padding-top: 90px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        align-items: center;
     }
 }
 
 .modal-contact {
     position: relative;
 
-    height: 100px;
+    min-height: 357px;
+    padding: 48px 32px;
+
     background-color: var(--white-color);
+
+    @media screen and (min-width: $mobile) {
+        width: 432px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 480px;
+    }
+
+    &__container {}
+
+    &__title {
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        font-size: 20px;
+        line-height: calc(24/20);
+    }
 }
 
 .modal-contact__button {
@@ -23,15 +55,27 @@
 
     padding: 0;
     background-color: var(--white-color);
-    outline: none;
     border: none;
+
+    @media screen and (max-width: $preTablet) {
+        top: 16px;
+        right: 16px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        top: 24px;
+        right: 24px;
+    }
 }
 
 .modal-contact__close-icon {
     fill: var(--balck-color);
-    display: block;
 
     @media screen and (max-width: $preTablet) {
         font-size: 18px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 24px;
     }
 }
