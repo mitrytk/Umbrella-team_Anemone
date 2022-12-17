@@ -40,14 +40,68 @@
     @media screen and (min-width: $tablet) {
         width: 480px;
     }
+}
 
-    &__container {}
-
+.contact-form {
     &__title {
         font-family: 'Montserrat-SemiBold', sans-serif;
-        font-size: 20px;
-        line-height: calc(24/20);
+        color: var(--balck-color);
+
+        @media screen and (max-width: $preTablet) {
+            font-size: 20px;
+            line-height: calc(24/20);
+            margin-bottom: 14px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 32px;
+            line-height: calc(39/32);
+            margin-bottom: 24px;
+        }
     }
+
+    &__text {
+        font-family: 'Montserrat-Medium', sans-serif;
+        color: var(--modal-text-color);
+
+        @media screen and (max-width: $preTablet) {
+            font-size: 12px;
+            line-height: calc(15/12);
+            margin-bottom: 18px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 16px;
+            line-height: calc(20/16);
+            margin-bottom: 32px;
+        }
+    }
+
+    &__list {
+        @extend %list;
+    }
+
+    &__item {}
+
+    &__lable {}
+
+    &__desc {
+        font-family: 'Montserrat-Medium', sans-serif;
+        color: var(--modal-text-color);
+        margin-bottom: 8px;
+
+        @media screen and (max-width: $preTablet) {
+            font-size: 10px;
+            line-height: calc(12/10);
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 14px;
+            line-height: calc(17/14);
+        }
+    }
+
+    &__input {}
 }
 
 .modal-contact__button {
