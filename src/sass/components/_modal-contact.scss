@@ -4,11 +4,11 @@
     left: 0;
 
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 
     background-color: rgba(0, 0, 0, 0.3);
 
-    @media screen and (max-width: $preMobile) {
+    @media screen and (max-width: $preTablet) {
         padding-top: 90px;
         padding-right: 24px;
         padding-left: 24px;
@@ -17,20 +17,20 @@
     @media screen and (min-width: $mobile) {
         display: flex;
         justify-content: center;
-        padding-top: 90px;
     }
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: $mobile) and (max-width: $preTablet) {
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width: $tablet) {
         align-items: center;
     }
 }
 
 .modal-contact {
     position: relative;
-
-    min-height: 357px;
     padding: 48px 32px;
-
     background-color: var(--white-color);
 
     @media screen and (min-width: $mobile) {
@@ -79,9 +79,27 @@
 
     &__list {
         @extend %list;
+
+        @media screen and (max-width: $preTablet) {
+            margin-bottom: 24px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 38px;
+        }
     }
 
     &__item {}
+
+    &__item:first-child {
+        @media screen and (max-width: $preTablet) {
+            margin-bottom: 14px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 24px;
+        }
+    }
 
     &__lable {}
 
@@ -101,7 +119,52 @@
         }
     }
 
-    &__input {}
+    &__input {
+        width: 100%;
+        border: 1px solid var(--modal-input-color);
+        border-radius: 4px;
+        font-family: 'Montserrat-Medium', sans-serif;
+
+        color: var(--balck-color);
+
+        @media screen and (max-width: $preTablet) {
+            padding: 10px 12px;
+            font-size: 12px;
+            line-height: calc(15/12);
+        }
+
+        @media screen and (min-width: $tablet) {
+            padding: 16px;
+            font-size: 14px;
+            line-height: calc(17/14);
+        }
+    }
+
+    &__button {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+
+        background-color: var(--brend-color);
+        color: var(--white-color);
+
+        font-family: 'Montserrat-SemiBold', sans-serif;
+
+        @media screen and (max-width: $preTablet) {
+            font-size: 14px;
+            line-height: calc(17/14);
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 18px;
+            line-height: calc(22/18);
+        }
+    }
+}
+
+.contact-form__input::placeholder {
+    color: var(--modal-input-color);
 }
 
 .modal-contact__button {
