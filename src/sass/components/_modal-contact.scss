@@ -1,0 +1,27 @@
+.backdrop-contact {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    @media screen and (max-width: $preTablet) {
+        padding-top: 90px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+}
+
+.modal-contact {
+    @media screen and (max-width: $preTablet) {
+
+        height: 100px;
+
+        background-color: var(--white-color);
+    }
+}
+
+.modal-contact__button {}
+
+.modal-contact__close-icon {
+    fill: black;
+}
