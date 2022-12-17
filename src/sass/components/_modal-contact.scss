@@ -12,16 +12,26 @@
 }
 
 .modal-contact {
-    @media screen and (max-width: $preTablet) {
+    position: relative;
 
-        height: 100px;
-
-        background-color: var(--white-color);
-    }
+    height: 100px;
+    background-color: var(--white-color);
 }
 
-.modal-contact__button {}
+.modal-contact__button {
+    position: absolute;
+
+    padding: 0;
+    background-color: var(--white-color);
+    outline: none;
+    border: none;
+}
 
 .modal-contact__close-icon {
-    fill: black;
+    fill: var(--balck-color);
+    display: block;
+
+    @media screen and (max-width: $preTablet) {
+        font-size: 18px;
+    }
 }
