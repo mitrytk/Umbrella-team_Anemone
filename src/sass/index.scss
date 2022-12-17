@@ -2,8 +2,10 @@
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/mixins';
+@import './utils/fonts';
 @import './base/reset-styles';
 @import './base/vs';
+
 // header
 @import './components/logo';
 @import './components/header';
