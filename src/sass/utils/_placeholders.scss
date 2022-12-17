@@ -61,18 +61,24 @@
         width: 100%;
         height: 1px;
         background-color: var(--black-color);
+
+        @media screen and (max-width: $preTablet) {
+            margin-left: 14px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            margin-left: 16px;
+        }
     }
 
     @media screen and (max-width: $preTablet) {
         font-size: 24px;
         line-height: calc(29/24);
-        margin-left: 14px;
     }
 
     @media screen and (min-width: $tablet) {
         font-size: 44px;
         line-height: calc(54/44);
-        margin-left: 16px;
     }
 
 }
