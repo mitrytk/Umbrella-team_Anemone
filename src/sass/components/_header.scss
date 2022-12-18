@@ -176,6 +176,7 @@
   // padding: 124px 110px 180px 110px;
   @media screen and (max-width: $preTablet) {
     padding-top: 124px;
+    padding-bottom: 50px;
     flex-direction: column;
   }
 }
