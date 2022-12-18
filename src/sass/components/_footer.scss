@@ -1,65 +1,74 @@
-// .footer {
+.footer {
 
-//   &__container {
-//   }
+  &__container {
+  }
 
-//   &__nav {
-//   }
+  &__nav {
+  }
 
-//   &__title {
-//   }
+  &__title {
+    font-family: 'Inter-Bold', sans-serif;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    color: red($color: #000000);
+  }
 
-//   &__list {
-//   }
+  &__list {
+  }
 
-//   &__item {
-//   }
+  &__item {
+  }
 
-//   &__link {
-//   }
+  &__link {
+  }
 
-//   &__time {
-//   }
+  &__time {
+  }
 
-//   &__text {
-//   }
-// }
-// .logo-footer {
+  &__text {
+  }
+}
+.logo-footer {
 
-//   &__link {
-//   }
+  &__link {
+  }
 
-//   &__icon {
-//   }
-// }
-// .address {
+  &__icon {
+  }
+}
 
-//   &__title {
-//   }
+.address {
 
-//   &__list {
-//   }
+  &__title {
+    font-family: 'Inter-Bold', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
 
-//   &__elem {
-//   }
+  &__list {
+  }
 
-//   &__addr {
-//   }
+  &__elem {
+  }
 
-//   &__location {
-//   }
-// }
-// .footer-social {
+  &__addr {
+  }
 
-//   &__list {
-//   }
+  &__location {
+  }
+}
+.footer-social {
 
-//   &__item {
-//   }
+  &__list {
+  }
 
-//   &__link {
-//   }
+  &__item {
+  }
 
-//   &__icon {
-//   }
-// }
+  &__link {
+  }
+
+  &__icon {
+  }
+}
