@@ -9,7 +9,7 @@
         alt="logo"
       />
     </a>
-    <nav class="header__nav nav">
+    <!-- <nav class="header__nav nav">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="">Anemone</a>
@@ -27,36 +27,21 @@
           <a class="nav__link" href="">Blog</a>
         </li>
       </ul>
-    </nav>
-    <div class="header__contakt">
-      <a class="header__tel" href="tel:+380631234567">
-        <img class="header__tel-logo" src="./images/tel.svg" alt="tel" />
-      </a>
-    </div>
-    <button class="nav__icon icon-nav" type="button">
-      <img
-        class="nav__burger"
-        width="24"
-        height="24"
-        src="./images/burger.svg"
-        alt="burger"
-      />
-    </button>
-
-    <div class="mobile__container js-menu-container">
-      <div class="mobile__button">
-        <button class="mobile__close js-close-menu" type="button">
-          <svg class="mobile__icon-menu" width="18" height="18">
-            <use href="./images/symbol-defs.svg#icon-menu-close"></use>
-          </svg>
-          <!-- <img
-            class="mobile__icon-menu"
-            src="./images/cross-menu.svg"
-            alt="close"
-            width="18"
-            height="18"
-          /> -->
-        </button>
+    </nav> -->
+    <div class="header-nav__container">
+      <div class="header__contakt">
+        <a class="header__tel" href="tel:+380631234567">
+          <img class="header__tel-logo" src="./images/tel.svg" alt="tel" />
+        </a>
+      </div>
+      <button class="nav__icon icon-nav" type="button" data-menu-button>
+        <svg class="mobile__icon-menu" width="24" height="24">
+          <use class="nav__burger" href="./images/symbol-defs.svg#icon-burger"></use>
+          <use class="nav__close" href="./images/symbol-defs.svg#icon-menu-close"></use>
+        </svg>
+      </button>
+  
+      <div class="mobile__container" data-menu>
         <ul class="mobile__list">
           <li class="mobile__item">
             <a class="mobile__link" href="">Anemone</a>
