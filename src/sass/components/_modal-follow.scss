@@ -50,13 +50,24 @@
         background-color: red;
     }
 
-    &__desc {
+    &__form {
         @media screen and (max-width: $preTablet) {
             padding-top: 18px;
             padding-right: 16px;
             padding-bottom: 28px;
             padding-left: 16px;
         }
+    }
+
+
+}
+
+.follow-form {
+    @media screen and (max-width: $preTablet) {
+        padding-top: 18px;
+        padding-right: 16px;
+        padding-bottom: 28px;
+        padding-left: 16px;
     }
 
     &__title {
