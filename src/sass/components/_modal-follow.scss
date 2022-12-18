@@ -96,4 +96,26 @@
         }
 
     }
+
+    &__button {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+
+        background-color: var(--brend-color);
+        color: var(--white-color);
+
+        font-family: 'Montserrat-SemiBold', sans-serif;
+
+        @media screen and (max-width: $preTablet) {
+            font-size: 14px;
+            line-height: calc(17/14);
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 18px;
+            line-height: calc(22/18);
+        }
+    }
 }
