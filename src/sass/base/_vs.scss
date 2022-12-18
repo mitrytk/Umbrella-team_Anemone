@@ -35,7 +35,7 @@ body.is-fixed {
     position: absolute;
 
     padding: 0;
-    background-color: var(--white-color);
+    background-color: opacity($color: #000000);
     border: none;
 
     @media screen and (max-width: $preTablet) {
