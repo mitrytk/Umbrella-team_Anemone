@@ -17,6 +17,7 @@
 }
 
 .header__nav {
+  @extend %font-face;
   position: relative;
   display: flex;
   justify-content: center;
