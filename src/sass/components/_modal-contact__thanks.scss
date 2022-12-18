@@ -20,7 +20,20 @@
         padding: 54px 32px;
     }
 
-    &__title {}
+    &__icon {
+        width: 100%;
+        height: auto;
+    }
+
+    &__title {
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        color: var(--black-color);
+
+        @media screen and (max-width: $preTablet) {
+            font-size: 20px;
+            line-height: calc(24/20);
+        }
+    }
 
     &__text {}
 
