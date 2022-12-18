@@ -1,0 +1,40 @@
+.backdrop-follow {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    @media screen and (max-width: $preTablet) {
+        padding-top: 60px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    @media screen and (min-width: $mobile) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: $preTablet) {
+        padding-top: 153px;
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width: $tablet) {
+        align-items: center;
+    }
+}
+
+.modal-follow {
+    position: relative;
+    background-color: var(--white-color);
+
+    &__tumb {
+        height: 121px;
+        background-color: red;
+    }
+}
