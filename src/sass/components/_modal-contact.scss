@@ -167,7 +167,7 @@
     color: var(--modal-input-color);
 }
 
-.modal-contact__button {
+.close-button {
     position: absolute;
 
     padding: 0;
@@ -183,16 +183,16 @@
         top: 24px;
         right: 24px;
     }
-}
 
-.modal-contact__close-icon {
-    fill: var(--balck-color);
+    &__icon {
+        fill: var(--balck-color);
 
-    @media screen and (max-width: $preTablet) {
-        font-size: 18px;
-    }
+        @media screen and (max-width: $preTablet) {
+            font-size: 18px;
+        }
 
-    @media screen and (min-width: $tablet) {
-        font-size: 24px;
+        @media screen and (min-width: $tablet) {
+            font-size: 24px;
+        }
     }
 }
