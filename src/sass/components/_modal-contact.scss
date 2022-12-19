@@ -166,3 +166,27 @@
 .contact-form__input::placeholder {
     color: var(--modal-input-color);
 }
+
+.backdrop-contact {
+    visibility: visible;
+    opacity: 1;
+
+    @extend %transition-main;
+    transition-property: opacity, visibility;
+}
+
+.modal-contact {
+    transform: scale(1);
+    @extend %transition-main;
+    transition-property: transform;
+}
+
+.backdrop-contact.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop-contact.is-hidden .modal-contact {
+    transform: scale(0);
+}
