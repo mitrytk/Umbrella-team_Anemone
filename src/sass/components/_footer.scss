@@ -7,29 +7,28 @@
   &__container {
     @extend %container;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 
-  @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $preTablet) {
+// width: calc(100% / 2);
+      flex-wrap: wrap;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  @media screen and (min-width: $preTablet) {
 
+    flex-wrap: nowrap;
     padding-top: 32px;
     padding-bottom: 32px;
-  }
-  @media screen and (min-width: $mobile) {
-
-    padding-top: 32px;
-    padding-bottom: 32px;
+    flex-wrap: nowrap;
   }
 
   @media screen and (min-width: $tablet) {
-
     padding-top: 60px;
     padding-bottom: 54px;
-
   }
 
   @media screen and (min-width: $desctop) {
-
     padding-top: 70px;
     padding-bottom: 70px;
   }
@@ -48,31 +47,54 @@
 }
 
 .footer-nav {
-  margin-bottom: 32px;
+  @media screen and (max-width: $preMobile) {
+    margin-bottom: 32px;
+  }
+  @media screen and (max-width: $preTablet) {
+    width: 128px;
+  }
+
   &__title {
     margin-bottom: 18px;
     font-family: 'Inter-Bold', sans-serif;
+    color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+
     font-size: 18px;
     line-height: calc(22 / 18);
-    color: var(--white-color);
+    }
+
+    @media screen and (min-width: $preTablet) {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    }
   }
 
   &__list {
     @extend %list;
   }
-
   // &__item {
   // }
+
+  &__item:not(:last-child) {
+      margin-bottom: 12px;
+    }
 
   &__link {
     @extend %link;
     font-family: 'Inter-Medium', sans-serif;
-    font-size: 16px;
-    line-height: calc(19 / 16);
     color: var(--white-color);
-  }
-  &__link:not(last-child) {
-    margin-bottom: 12px;
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 14px;
+      line-height: calc(19 / 14);
+    }
+
+    @media screen and (min-width: $preTablet) {
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
   }
 }
 
@@ -80,15 +102,31 @@
   &__title {
     margin-bottom: 18px;
     font-family: 'Inter-Bold', sans-serif;
-    font-size: 18px;
-    line-height: calc(22 / 18);
     color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 18px;
+      line-height: calc(22 / 18);
+      }
+
+      @media screen and (min-width: $preTablet) {
+      font-size: 20px;
+      line-height: calc(24 / 20);
+      }
   }
   &__text {
     font-family: 'Inter-Medium', sans-serif;
-    font-size: 16px;
-    line-height: calc(19 / 16);
     color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 14px;
+      line-height: calc(19 / 14);
+    }
+
+    @media screen and (min-width: $preTablet) {
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
   }
 }
 
@@ -96,10 +134,18 @@
   &__title {
     margin-bottom: 18px;
     font-family: 'Inter-Bold', sans-serif;
-    font-size: 18px;
-    line-height: calc(22 / 18);
     font-style: normal;
     color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 18px;
+      line-height: calc(22 / 18);
+      }
+
+      @media screen and (min-width: $preTablet) {
+      font-size: 20px;
+      line-height: calc(24 / 20);
+      }
   }
 
   &__list {
@@ -113,42 +159,61 @@
     margin-bottom: 12px;
     @extend %link;
     font-family: 'Inter-Medium', sans-serif;
-    font-size: 16px;
     font-style: normal;
-    line-height: calc(19 / 16);
     color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 14px;
+      line-height: calc(19 / 14);
+    }
+
+    @media screen and (min-width: $preTablet) {
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
   }
   &__location {
     @extend %link;
     font-family: 'Inter-Medium', sans-serif;
-    font-size: 16px;
     font-style: normal;
-    line-height: calc(19 / 16);
     color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 14px;
+      line-height: calc(19 / 14);
+    }
+
+    @media screen and (min-width: $preTablet) {
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
   }
 }
 
 
 .footer-social {
-  width: 128px;
   &__list {
     @extend %list;
     display: flex;
     align-items: center;
     gap: 14px;
-    
-    @media screen and (min-width: $preTablet) {
-      flex-direction: column;
+
+    @media screen and (max-width: $preTablet) {
+      width: 128px;
+      align-items: start;
     }
 
+    @media screen and (min-width: $preTablet) {
+          align-items: end;
+          flex-direction: column;
+    }
   }
 
-  &__item {
-  }
+  // &__item {
+  // }
 
-  &__link {
-
-  }
+  // &__link {
+  // }
 
   &__icon {
     stroke: var(--white-color);
