@@ -12,11 +12,3 @@
     mobileMenuRef.classList.toggle('is-open');
   });
 })();
-(() => {
-  const menuBtnRef = document.querySelector('[data-menu-button]');
-  const mobileBodyRef = document.querySelector('[data-body]');
-
-  menuBtnRef.addEventListener('click', () => {
-    mobileBodyRef.classList.toggle('is-fixed');
-  });
-})();
