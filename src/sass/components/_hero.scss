@@ -5,47 +5,63 @@
   padding-bottom: 100px;
 
   @media screen and (max-width: $preTablet) {
+    // 
     padding-top: 44px;
   }
 
   @media screen and (min-width: $tablet) and (max-width: $preDesctop) {
+    // 
     padding-top: 38px;
   }
 
   @media screen and (min-width: $desctop) {
+    // 
     padding-top: 64px;
   }
 }
 
 .hero__container {
-  @extend %section;
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: $preTablet) {
+    width: 289px;
+    padding-bottom: 36px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 720px;
+    padding-bottom: 94px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 942px;
+  }
+
 }
 
 .hero__text {
   display: flex;
   align-items: center;
-  margin-right: 14px;
-  font-family: 'Montserrat-Regular';
-  src: url('../fonts/Montserrat-Regular.eot');
-  src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'),
-    url('../fonts/Montserrat-Regular.ttf') format('truetype'),
-    url('../fonts/Montserrat-Regular.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-size: 14px;
-  line-height: calc(17 / 14);
 
-  @media screen and (min-width: $tablet) {
-    margin-right: 40px;
+  font-family: 'Montserrat-Regular', sans-serif;
+
+  @media screen and (max-width: $preTablet) {
+    width: 64px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $preDesctop) {
+    width: 145px;
     font-size: 24px;
     line-height: calc(29 / 24);
   }
 
   @media screen and (min-width: $desctop) {
-    margin-right: 110px;
+    width: 166px;
     font-size: 32px;
     line-height: calc(39 / 32);
   }
@@ -54,20 +70,15 @@
 .hero__img {
   max-width: 145px;
   max-height: 274px;
-  margin-right: 8px;
 
   @media screen and (min-width: $tablet) {
     min-width: 390px;
     min-height: 636px;
-    margin-right: 20px;
-  }
-
-  @media screen and (min-width: $desctop) {
-    margin-right: 110px;
   }
 }
 
 .hero__button {
+  padding: 0;
   border: none;
   background-color: transparent;
 
@@ -98,36 +109,20 @@
 }
 
 .hero__title {
-  display: flex;
   position: absolute;
   bottom: 0;
+  width: 100%;
   text-align: center;
+  font-family: 'Montserrat-Regular', sans-serif;
 
-  @media screen and (min-width: $tablet) {
-    bottom: -40px;
+  @media screen and (max-width: $preTablet) {
+    font-size: 52px;
+    line-height: calc(63 / 52);
   }
 
-  @media screen and (min-width: $desctop) {
-    bottom: -45px;
-  }
-}
-
-.hero__title-text {
-  font-family: 'Montserrat-Regular';
-  src: url('../fonts/Montserrat-Regular.eot');
-  src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'),
-    url('../fonts/Montserrat-Regular.ttf') format('truetype'),
-    url('../fonts/Montserrat-Regular.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-size: 52px;
-  line-height: calc(63 / 52);
-
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $preDesctop) {
     font-size: 120px;
     line-height: calc(146 / 120);
-    text-align: center;
-    top: 679px;
   }
 
   @media screen and (min-width: $desctop) {
