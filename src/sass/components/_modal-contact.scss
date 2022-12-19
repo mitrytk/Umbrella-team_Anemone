@@ -1,0 +1,168 @@
+.backdrop-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    @media screen and (max-width: $preTablet) {
+        padding-top: 90px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    @media screen and (min-width: $mobile) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: $preTablet) {
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width: $tablet) {
+        align-items: center;
+    }
+}
+
+.modal-contact {
+    position: relative;
+    padding: 48px 32px;
+    background-color: var(--white-color);
+
+    @media screen and (min-width: $mobile) {
+        width: 432px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 480px;
+    }
+}
+
+.contact-form {
+    &__title {
+        font-family: 'Montserrat-SemiBold', sans-serif;
+        color: var(--balck-color);
+
+        @media screen and (max-width: $preTablet) {
+            font-size: 20px;
+            line-height: calc(24/20);
+            margin-bottom: 14px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 32px;
+            line-height: calc(39/32);
+            margin-bottom: 24px;
+        }
+    }
+
+    &__text {
+        font-family: 'Montserrat-Medium', sans-serif;
+        color: var(--modal-text-color);
+
+        @media screen and (max-width: $preTablet) {
+            font-size: 12px;
+            line-height: calc(15/12);
+            margin-bottom: 18px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 16px;
+            line-height: calc(20/16);
+            margin-bottom: 32px;
+        }
+    }
+
+    &__list {
+        @extend %list;
+
+        @media screen and (max-width: $preTablet) {
+            margin-bottom: 24px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 38px;
+        }
+    }
+
+    &__item {}
+
+    &__item:first-child {
+        @media screen and (max-width: $preTablet) {
+            margin-bottom: 14px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__lable {}
+
+    &__desc {
+        font-family: 'Montserrat-Medium', sans-serif;
+        color: var(--modal-text-color);
+        margin-bottom: 8px;
+
+        @media screen and (max-width: $preTablet) {
+            font-size: 10px;
+            line-height: calc(12/10);
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 14px;
+            line-height: calc(17/14);
+        }
+    }
+
+    &__input {
+        width: 100%;
+        border: 1px solid var(--modal-input-color);
+        border-radius: 4px;
+        font-family: 'Montserrat-Medium', sans-serif;
+
+        color: var(--balck-color);
+
+        @media screen and (max-width: $preTablet) {
+            padding: 10px 12px;
+            font-size: 12px;
+            line-height: calc(15/12);
+        }
+
+        @media screen and (min-width: $tablet) {
+            padding: 16px;
+            font-size: 14px;
+            line-height: calc(17/14);
+        }
+    }
+
+    &__button {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+
+        background-color: var(--brend-color);
+        color: var(--white-color);
+
+        font-family: 'Montserrat-SemiBold', sans-serif;
+
+        @media screen and (max-width: $preTablet) {
+            font-size: 14px;
+            line-height: calc(17/14);
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 18px;
+            line-height: calc(22/18);
+        }
+    }
+}
+
+.contact-form__input::placeholder {
+    color: var(--modal-input-color);
+}
