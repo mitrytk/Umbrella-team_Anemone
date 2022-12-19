@@ -1,0 +1,112 @@
+.hero__section {
+  @extend %container;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__container {
+  @extend %section;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero__text {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+    url('../fonts/Montserrat-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  @media screen and (min-width: $tablet) {
+    margin-right: 40px;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+  @media screen and (min-width: $desctop) {
+    margin-right: 110px;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+  }
+}
+
+.hero__img {
+  max-width: 145px;
+  max-height: 274px;
+  margin-right: 8px;
+  @media screen and (min-width: $tablet) {
+    min-width: 390px;
+    min-height: 636px;
+    margin-right: 20px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-right: 110px;
+  }
+}
+
+.hero__button {
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: $tablet) {
+    min-width: 145px;
+    min-height: 150px;
+  }
+  @media screen and (min-width: $desctop) {
+    min-width: 166px;
+    min-height: 166px;
+  }
+}
+
+.hero__button-svg {
+  max-width: 64px;
+  max-height: 76px;
+  @media screen and (min-width: $tablet) {
+    min-width: 145px;
+    min-height: 150px;
+  }
+  @media screen and (min-width: $desctop) {
+    min-width: 166px;
+    min-height: 166px;
+  }
+}
+
+.hero__title {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    bottom: -40px;
+  }
+  @media screen and (min-width: $desctop) {
+    bottom: -45px;
+  }
+}
+
+.hero__title-text {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: local('☺'), url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+    url('../fonts/Montserrat-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 52px;
+  line-height: calc(63 / 52);
+  @media screen and (min-width: $tablet) {
+    font-size: 120px;
+    line-height: calc(146 / 120);
+    text-align: center;
+    top: 679px;
+  }
+  @media screen and (min-width: $desctop) {
+    font-size: 160px;
+    line-height: calc(195 / 160);
+  }
+}
