@@ -2,6 +2,7 @@
   @extend %container;
   display: flex;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .hero__container {
@@ -24,11 +25,13 @@
   font-style: normal;
   font-size: 14px;
   line-height: calc(17 / 14);
+
   @media screen and (min-width: $tablet) {
     margin-right: 40px;
     font-size: 24px;
     line-height: calc(29 / 24);
   }
+
   @media screen and (min-width: $desctop) {
     margin-right: 110px;
     font-size: 32px;
@@ -40,11 +43,13 @@
   max-width: 145px;
   max-height: 274px;
   margin-right: 8px;
+
   @media screen and (min-width: $tablet) {
     min-width: 390px;
     min-height: 636px;
     margin-right: 20px;
   }
+
   @media screen and (min-width: $desctop) {
     margin-right: 110px;
   }
@@ -53,10 +58,12 @@
 .hero__button {
   border: none;
   background-color: transparent;
+
   @media screen and (min-width: $tablet) {
     min-width: 145px;
     min-height: 150px;
   }
+
   @media screen and (min-width: $desctop) {
     min-width: 166px;
     min-height: 166px;
@@ -66,10 +73,12 @@
 .hero__button-svg {
   max-width: 64px;
   max-height: 76px;
+
   @media screen and (min-width: $tablet) {
     min-width: 145px;
     min-height: 150px;
   }
+
   @media screen and (min-width: $desctop) {
     min-width: 166px;
     min-height: 166px;
@@ -81,9 +90,11 @@
   position: absolute;
   bottom: 0;
   text-align: center;
+
   @media screen and (min-width: $tablet) {
     bottom: -40px;
   }
+
   @media screen and (min-width: $desctop) {
     bottom: -45px;
   }
@@ -99,12 +110,14 @@
   font-style: normal;
   font-size: 52px;
   line-height: calc(63 / 52);
+
   @media screen and (min-width: $tablet) {
     font-size: 120px;
     line-height: calc(146 / 120);
     text-align: center;
     top: 679px;
   }
+
   @media screen and (min-width: $desctop) {
     font-size: 160px;
     line-height: calc(195 / 160);

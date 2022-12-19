@@ -1,12 +1,5 @@
 .section__about {
-    padding-top: 50px;
-    @media screen and (max-width: $preTablet) {
-        padding-bottom: 30px;
-    }
-
-    @media screen and (min-width: $tablet) {
-        padding-bottom: 50px;
-    }
+    @extend %section
 }
 
 .about__container {
@@ -52,7 +45,7 @@
     @media screen and (max-width: $preTablet) {
         margin-bottom: 16px;
     }
-    
+
     @media screen and (min-width: $tablet) {
         max-width: 322px;
         font-size: 20px;
