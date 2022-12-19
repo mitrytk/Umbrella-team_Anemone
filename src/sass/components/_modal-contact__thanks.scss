@@ -1,26 +1,20 @@
-.backdrop-thanks {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background-color: var(--white-color);
-}
-
 .modal-thanks {
     width: 100%;
     height: 100%;
 
-    display: flex;
+    display: none;
     flex-direction: column;
 
     @media screen and (max-width: $preTablet) {
         padding: 32px 16px;
+        max-width: 432px;
+        min-height: 357px;
     }
 
     @media screen and (min-width: $tablet) {
         padding: 54px 32px;
+        width: 480px;
+        min-height: 505px;
     }
 
     &__icon {
@@ -93,4 +87,12 @@
             line-height: calc(22/18);
         }
     }
+}
+
+.modal-thanks.is-hidden {
+    display: flex;
+}
+
+.modal-thanks.is-hidden+.modal-contact {
+    display: none;
 }

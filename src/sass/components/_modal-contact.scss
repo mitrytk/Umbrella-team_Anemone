@@ -28,10 +28,15 @@
     }
 }
 
-.modal-contact {
+.modal-container {
     position: relative;
-    padding: 48px 32px;
     background-color: var(--white-color);
+
+}
+
+.modal-contact {
+    // display: none;
+    padding: 48px 32px;
 
     @media screen and (min-width: $mobile) {
         width: 432px;
@@ -175,7 +180,7 @@
     transition-property: opacity, visibility;
 }
 
-.modal-contact {
+.modal-container {
     transform: scale(1);
     @extend %transition-main;
     transition-property: transform;
@@ -187,6 +192,6 @@
     pointer-events: none;
 }
 
-.backdrop-contact.is-hidden .modal-contact {
+.backdrop-contact.is-hidden .modal-container {
     transform: scale(0);
 }
