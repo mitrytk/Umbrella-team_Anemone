@@ -1,5 +1,5 @@
 .backdrop-follow {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -222,4 +222,28 @@
             margin-bottom: 28px;
         }
     }
+}
+
+.backdrop-follow {
+    visibility: visible;
+    opacity: 1;
+
+    @extend %transition-main;
+    transition-property: opacity, visibility;
+}
+
+.modal-follow {
+    transform: scale(1);
+    @extend %transition-main;
+    transition-property: transform;
+}
+
+.backdrop-follow.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop-follow.is-hidden .modal-follow {
+    transform: scale(0);
 }
