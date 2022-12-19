@@ -8,6 +8,7 @@
     @extend %container;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     @media screen and (max-width: $mobile) {
 
