@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anemone</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
-  <body data-body>
+  <body data-body data-body-fixed>
     <!-- header -->
     <header>
       <include src="./partials/header.html"></include>
@@ -21,18 +21,18 @@
       <include src="./partials/about.html"></include>
       <include src="./partials/store.html"></include>
       <include src="./partials/delivery.html"></include>
-      <include src="./partials/blog.html"></include> 
+      <include src="./partials/blog.html"></include>
     </main>
     <!-- footer -->
     <footer>
-      <include src="./partials/footer.html"></include>  
+      <include src="./partials/footer.html"></include>
     </footer>
     <!-- modal -->
     <include src="./partials/modal-contact.html"></include>
-    <include src="./partials/modal-contact__thanks.html"></include>
     <include src="./partials/modal-follow.html"></include>
     <!-- script -->
     <script type="module" src="./js/index.js"></script>
     <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>
