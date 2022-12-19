@@ -1,6 +1,7 @@
 .store {
   @extend %section;
   @extend %container;
+
   &__title {
     @extend %title;
     margin-bottom: 32px;
@@ -17,7 +18,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 32px;
-
     @media screen and (min-width: $tablet) {
         margin-bottom: 60px;
     }
@@ -46,6 +46,7 @@
       }
     }
   }
+
   &__img {
     margin-bottom: 12px;
 
@@ -115,3 +116,4 @@
     }
   }
 }
+
