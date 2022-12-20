@@ -1,4 +1,4 @@
-// Позиционирует footer всегда снизу
+Позиционирует footer всегда снизу
 main {
     @media screen and (max-width: $preTablet) {
         min-height: calc(100vh - 612px);

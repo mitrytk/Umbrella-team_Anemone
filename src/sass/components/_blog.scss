@@ -1,0 +1,114 @@
+.blog {
+  @extend %section;
+  @extend %container;
+  &__title {
+    @extend %title;
+    margin-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $desctop) {
+      margin-bottom: 122px;
+    }
+  }
+  &__slider {
+    position: relative;
+    margin-bottom: 28px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: $desctop) {
+      margin-bottom: 44px;
+    }
+  }
+  &__item {
+    align-items: center;
+    transition: opacity 250ms var(--function-animation);
+  }
+  &__subtitle {
+    font-family: 'Montserrat-Medium', sans-serif;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    text-align: center;
+    margin-bottom: 32px;
+    @media screen and (min-width: $tablet) {
+      font-size: 32px;
+      line-height: calc(39 / 32);
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: $desctop) {
+      margin-bottom: 44px;
+    }
+  }
+  &__button {
+    @extend %button;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.slick-list {
+  padding: 0;
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  @media screen and (min-width: $mobile) {
+    height: 181px;
+    width: 460px;
+  }
+  @media screen and (min-width: $tablet) {
+    height: 398px;
+    width: 768px;
+  }
+  @media screen and (min-width: $desctop) {
+    height: 421px;
+    width: 1084px;
+  }
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  z-index: 1;
+  font-size: 0;
+  width: 41px;
+  height: 27px;
+  border: none;
+
+  @media screen and (min-width: $tablet) {
+    width: 96px;
+    height: 64px;
+  }
+  &.slick-prev {
+    left: 0;
+    background: url('../images/arrow-left-mob.svg') 0 0 / 100% no-repeat;
+    @media screen and (min-width: $tablet) {
+      background: url('../images/arrow-left-tablet.svg') 0 0 / 100% no-repeat;
+    }
+    @media screen and (min-width: $desctop) {
+      left: 4px;
+      background: url('../images/arrow-left.svg') 0 0 / 100% no-repeat;
+    }
+  }
+  &.slick-next {
+    right: 0;
+    background: url('../images/arrow-right-mob.svg') 0 0 / 100% no-repeat;
+    @media screen and (min-width: $tablet) {
+      background: url('../images/arrow-right-tablet.svg') 0 0 / 100% no-repeat;
+    }
+    @media screen and (min-width: $desctop) {
+      right: 4px;
+      background: url('../images/arrow-right.svg') 0 0 / 100% no-repeat;
+    }
+  }
+}
+.blog__item img {
+  transform: scale(0.8);
+  transition: transform 250ms ease;
+}
+.blog__item.slick-center img {
+  transform: scale(1);
+}
