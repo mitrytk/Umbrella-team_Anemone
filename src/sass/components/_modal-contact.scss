@@ -173,14 +173,12 @@
 }
 
 .contact-form__input:invalid {
-    border-color: red;
+    border-color: var(--brend-color);
 }
 
 .contact-form__input:placeholder-shown {
     border-color: var(--modal-input-color);
 }
-
-.contact-form__input:invalid.contact-form__button {}
 
 
 // анимация 

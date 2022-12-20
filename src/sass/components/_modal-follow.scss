@@ -247,3 +247,15 @@
 .backdrop-follow.is-hidden .modal-follow {
     transform: scale(0);
 }
+
+.follow-form__input::placeholder {
+    color: var(--modal-input-color);
+}
+
+.follow-form__input:invalid {
+    border-color: var(--brend-color);
+}
+
+.follow-form__input:placeholder-shown {
+    border-color: var(--modal-input-color);
+}
