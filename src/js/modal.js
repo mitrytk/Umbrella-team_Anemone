@@ -52,15 +52,38 @@
       refs.modalFollow.classList.toggle("is-hidden");
     }
   })();
+
+
+  (() => {
+    const refs = {
+      openModalFollowTwoBtn: document.querySelector("[data-modal-follow-two-open]"),
+      closeModalFollowTwoBtn: document.querySelector("[data-modal-follow-two-close]"),
+      modalFollowTwo: document.querySelector("[data-modal-follow-two]"),
+    };
+  
+    refs.openModalFollowTwoBtn.addEventListener("click", toggleModal);
+    refs.closeModalFollowTwoBtn.addEventListener("click", toggleModal);
+  
+    function toggleModal() {
+      refs.modalFollowTwo.classList.toggle("is-hidden");
+    }
+  })();
+
+
   (() => {
     const refs = {
       openModalFollowBtn: document.querySelector("[data-modal-follow-open]"),
       closeModalFollowBtn: document.querySelector("[data-modal-follow-close]"),
       bodyFixed: document.querySelector("[data-body-fixed]"),
+      openModalFollowTwoBtn: document.querySelector("[data-modal-follow-two-open]"),
+      closeModalFollowTwoBtn: document.querySelector("[data-modal-follow-two-close]"),
+      modalFollowTwo: document.querySelector("[data-modal-follow-two]"),
     };
   
     refs.openModalFollowBtn.addEventListener("click", toggleModal);
     refs.closeModalFollowBtn.addEventListener("click", toggleModal);
+    refs.openModalFollowTwoBtn.addEventListener("click", toggleModal);
+    refs.closeModalFollowTwoBtn.addEventListener("click", toggleModal);
   
     function toggleModal() {
       refs.bodyFixed.classList.toggle("is-fixed");
