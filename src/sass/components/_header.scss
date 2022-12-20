@@ -125,7 +125,6 @@
 }
 
 .mobile__icon-menu {
-  // position: absolute; Должна позиционироваться кнопка, а не иконка
   fill: var(--black-color);
 }
 
@@ -134,7 +133,6 @@
   display: flex;
   align-items: center;
 
-  // padding: 124px 110px 180px 110px;
   @media screen and (max-width: $preTablet) {
     padding-top: 124px;
     padding-bottom: 50px;
@@ -148,10 +146,6 @@
 
 .mobile__item {
   font-family: 'Montserrat-Regular', sans-serif;
-  // font-family: 'Montserrat' sans-serif;
-  // font-style: normal;
-  // font-weight: 400;
-  // в подключенных шрифтах все эти свойства уже указаны. В проекте нет шрифта 'Montserrat'.
   font-size: 20px;
   line-height: calc(24 / 20);
 
