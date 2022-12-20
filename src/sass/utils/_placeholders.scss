@@ -5,8 +5,7 @@
 
 %container {
     margin: 0 auto;
-
-    @media screen and (max-width: $preTablet) {
+     @media screen and (max-width: $preTablet) {
         max-width: 480px;
         padding-left: 16px;
         padding-right: 16px;
