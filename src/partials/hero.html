@@ -1,0 +1,50 @@
+<section class="hero__section" id="hero">
+  <div class="hero__container">
+    <p class="hero__text">
+      flower <br />
+      studio
+    </p>
+    <picture>
+      <source
+        srcset="./images/hero-mobile290.jpg"
+        media="(max-width:767.98px)"
+      />
+      <source srcset="./images/hero-tablet390.jpg" media="(min-width:768px)" />
+      <source
+        srcset="./images/hero-tablet780.jpg"
+        media="(min-width:1279.98px)"
+      />
+      <img
+        src="./images/hero-tablet780.jpg"
+        max-width="390"
+        max-height="636"
+        alt="flower"
+        class="hero__img"
+      />
+    </picture>
+    <button class="hero__button" type="button" data-modal-open>
+      <picture>
+        <source
+          srcset="./images/btn-shop-desctop.svg"
+          media="(min-width:1279.98px)"
+        />
+        <source
+          srcset="./images/btn-shop-tablet.svg"
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="./images/btn-shop-mobile.svg"
+          media="(max-width:767.98px)"
+        />
+        <img
+          class="hero__button-svg"
+          width="166"
+          height="166"
+          src="./images/btn-shop-desctop.svg "
+          alt="image button"
+        />
+      </picture>
+    </button>      
+    <h1 class="hero__title">ANEMONE</h1>
+  </div>
+</section>

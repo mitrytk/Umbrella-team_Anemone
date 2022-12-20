@@ -1,0 +1,233 @@
+.footer {
+  display: block;
+  background-color: var(--black-color);
+  margin-left: 0;
+  margin-right: 0;
+
+  &__container {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $mobile) {
+
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    @media screen and (min-width: $mobile) {
+
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    @media screen and (min-width: $tablet) {
+
+      padding-top: 60px;
+      padding-bottom: 54px;
+
+    }
+
+    @media screen and (min-width: $desctop) {
+
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+}
+
+.logo-footer {
+
+  &__icon {
+    fill: var(--white-color);
+  }
+
+  @media screen and (max-width: $preDesctop) {
+    display: none;
+  }
+}
+
+.footer-nav {
+  margin-bottom: 32px;
+
+  @media screen and (max-width: $preTablet) {
+    width: calc((100% - 32px * 2) / 2);
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-family: 'Inter-Bold', sans-serif;
+    color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+
+      font-size: 18px;
+      line-height: calc(22 / 18);
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: calc(24 / 20);
+    }
+  }
+
+  &__list {
+    @extend %list;
+  }
+
+  // &__item {
+  // }
+
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &__link {
+    @extend %link;
+    font-family: 'Inter-Medium', sans-serif;
+    color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 14px;
+      line-height: calc(19 / 14);
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
+  }
+}
+
+.footer-time {
+  @media screen and (max-width: $preTablet) {
+    width: calc((100% - 32px * 2) / 2);
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-family: 'Inter-Bold', sans-serif;
+    color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 18px;
+      line-height: calc(22 / 18);
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: calc(24 / 20);
+    }
+  }
+
+  &__text {
+    font-family: 'Inter-Medium', sans-serif;
+    color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 14px;
+      line-height: calc(19 / 14);
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
+  }
+}
+
+.footer-address {
+  @media screen and (max-width: $preTablet) {
+    width: calc((100% - 32px * 2) / 2);
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-family: 'Inter-Bold', sans-serif;
+    font-style: normal;
+    color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 18px;
+      line-height: calc(22 / 18);
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: calc(24 / 20);
+    }
+  }
+
+  &__list {
+    @extend %list;
+  }
+
+  // &__elem {
+  // }
+
+  &__addr {
+    margin-bottom: 12px;
+    @extend %link;
+    font-family: 'Inter-Medium', sans-serif;
+    font-style: normal;
+    color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 14px;
+      line-height: calc(19 / 14);
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
+  }
+
+  &__location {
+    @extend %link;
+    font-family: 'Inter-Medium', sans-serif;
+    font-style: normal;
+    color: var(--white-color);
+
+    @media screen and (max-width: $preTablet) {
+      font-size: 14px;
+      line-height: calc(19 / 14);
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
+  }
+}
+
+
+.footer-social {
+  width: 128px;
+
+  @media screen and (max-width: $preTablet) {
+    width: calc((100% - 32px * 2) / 2);
+  }
+
+  &__list {
+    @extend %list;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    @media screen and (max-width: $preTablet) {
+      width: 128px;
+      align-items: start;
+    }
+
+    @media screen and (min-width: $tablet) {
+      align-items: end;
+      flex-direction: column;
+    }
+  }
+
+  &__icon {
+    stroke: var(--white-color);
+  }
+}

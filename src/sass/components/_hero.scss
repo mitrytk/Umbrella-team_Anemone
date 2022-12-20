@@ -1,0 +1,130 @@
+.hero__section {
+  @extend %container;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+
+  @media screen and (max-width: $preTablet) {
+    // 
+    padding-top: 44px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $preDesctop) {
+    // 
+    padding-top: 38px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    // 
+    padding-top: 64px;
+  }
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: $preTablet) {
+    width: 289px;
+    padding-bottom: 36px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 720px;
+    padding-bottom: 94px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 942px;
+  }
+
+}
+
+.hero__text {
+  text-align: center;
+  font-family: 'Montserrat-Regular', sans-serif;
+
+  @media screen and (max-width: $preTablet) {
+    width: 64px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $preDesctop) {
+    width: 145px;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 166px;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+  }
+}
+
+.hero__img {
+  max-width: 145px;
+  max-height: 274px;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 390px;
+    min-height: 636px;
+  }
+}
+
+.hero__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 145px;
+    min-height: 150px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    min-width: 166px;
+    min-height: 166px;
+  }
+}
+
+.hero__button-svg {
+  max-width: 64px;
+  max-height: 76px;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 145px;
+    min-height: 150px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    min-width: 166px;
+    min-height: 166px;
+  }
+}
+
+.hero__title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat-Regular', sans-serif;
+
+  @media screen and (max-width: $preTablet) {
+    font-size: 52px;
+    line-height: calc(63 / 52);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $preDesctop) {
+    font-size: 120px;
+    line-height: calc(146 / 120);
+  }
+
+  @media screen and (min-width: $desctop) {
+    font-size: 160px;
+    line-height: calc(195 / 160);
+  }
+}
