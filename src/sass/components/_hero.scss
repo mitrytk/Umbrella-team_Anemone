@@ -76,14 +76,15 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 
   animation-name: rotate-bt;
   animation-duration: 3000ms;
   animation-timing-function: var(--function-animation);
   animation-iteration-count: infinite;
+  animation-play-state: running;
 
-  @extend %transition-main;
-  transition-property: transform, animation;
+  transform: scale(1);
 
   @media screen and (min-width: $tablet) {
     min-width: 145px;
@@ -98,14 +99,13 @@
 
 .hero__button:hover,
 .hero__button:focus {
-  animation: none;
-  transform: scale(1.1);
-  cursor: pointer;
+  animation-play-state: paused;
 }
 
 .hero__button-svg {
   max-width: 64px;
   max-height: 76px;
+  @extend %transition-main;
 
   @media screen and (min-width: $tablet) {
     min-width: 145px;
@@ -115,6 +115,10 @@
   @media screen and (min-width: $desctop) {
     min-width: 166px;
     min-height: 166px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
