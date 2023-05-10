@@ -1,6 +1,6 @@
-<div class="backdrop-contact is-hidden" data-modal>
+<div class="backdrop-contact is-hidden" data-modal-contact>
     <div class="modal-container">
-        <button class="close-button" type="button" data-modal-close>
+        <button class="close-button" type="button" data-close-contact>
             <svg class="close-button__icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M20 20L4 4m16 0L4 20"/></svg>
         </button>
         <!-- modal thanks -->
@@ -10,7 +10,7 @@
             </svg>
             <h2 class="modal-thanks__title">Thank you!</h2>
             <p class="modal-thanks__text">We have received your contact details and will reach you soon.</p>
-            <button class="modal-thanks__button" type="button" data-modal-thanks-close>Continue</button>
+            <button class="modal-thanks__button" type="button" data-thanks-close>Continue</button>
         </div>
         <!-- modal contact -->
         <div class="modal-contact">
@@ -21,17 +21,17 @@
                     <li class="contact-form__item">
                         <label class="contact-form__lable">
                             <p class="contact-form__desc">Name</p>
-                            <input class="contact-form__input" type="text" placeholder="Your name" name="contact-name" minlength="3" required>
+                            <input class="contact-form__input" type="text" placeholder="Your name" name="name" minlength="3" required>
                         </label>
                     </li>
                     <li class="contact-form__item">
                         <label class="contact-form__lable">
                             <p class="contact-form__desc">Email</p>
-                            <input class="contact-form__input" type="email" placeholder="Your email" name="contact-email" minlength="3" required>
+                            <input class="contact-form__input" type="email" placeholder="Your email" name="email" minlength="3" required>
                         </label>
                     </li>
                 </ul>
-                <button class="contact-form__button" type="button" data-modal-thanks-open>Send </button>
+                <button class="contact-form__button" type="submit">Send </button>
             </form>
         </div>
     </div>
