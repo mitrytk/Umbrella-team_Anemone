@@ -1,5 +1,4 @@
-Позиционирует footer всегда снизу
-main {
+Позиционирует footer всегда снизу main {
     @media screen and (max-width: $preTablet) {
         min-height: calc(100vh - 612px);
     }
@@ -26,9 +25,8 @@ main {
 }
 
 body.is-fixed {
-    overflow: hidden;
-    width: 100%;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .close-button {

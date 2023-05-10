@@ -74,16 +74,16 @@
   display: none;
 }
 
-.nav__icon.is-open {
+.nav__icon.is-active {
   position: relative;
   z-index: 101;
 }
 
-.nav__icon.is-open .nav__burger {
+.nav__icon.is-active .nav__burger {
   display: none;
 }
 
-.nav__icon.is-open .nav__close {
+.nav__icon.is-active .nav__close {
   display: block;
 }
 
