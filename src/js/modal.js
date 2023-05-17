@@ -42,7 +42,7 @@ const handleSubmitFollow = e => {
   toggleClass(refs.modalFollow);
 };
 
-//Close modal event listeners
+//Close btn modal event listeners
 refs.closeContactBtn.addEventListener('click', () =>
   toggleClass(refs.modalContact)
 );
@@ -53,6 +53,37 @@ refs.closeFollowBtn.addEventListener('click', () =>
   toggleClass(refs.modalFollow)
 );
 
+//close backdrop modal event listeners
+
+refs.modalContact.addEventListener('click', e => {
+  if (e.target === e.currentTarget) {
+    toggleClass(refs.modalContact);
+  }
+});
+refs.modalFollow.addEventListener('click', e => {
+  if (e.target === e.currentTarget) {
+    toggleClass(refs.modalFollow);
+  }
+});
+
+//close keyboard modal event listeners
+
+document.addEventListener(
+  'keydown',
+  e => {
+    const isEscapePressed = e.key === 'Escape';
+    const isOpenContacts = refs.modalContact.classList.contains('is-hidden');
+    const isOpenFollow = refs.modalFollow.classList.contains('is-hidden');
+
+    if (!isOpenContacts && isEscapePressed) {
+      toggleClass(refs.modalContact);
+    }
+    if (!isOpenFollow && isEscapePressed) {
+      toggleClass(refs.modalFollow);
+    }
+  },
+  { passive: true }
+);
 //Open modal event listeners
 refs.heroBtn.addEventListener('click', () => toggleClass(refs.modalContact));
 refs.storeBtn.addEventListener('click', () => toggleClass(refs.modalContact));

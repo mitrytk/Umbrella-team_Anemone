@@ -20,12 +20,12 @@ const toggleClass = () => {
 
 const openMenu = () => {
   toggleClass();
-  mobileListRef.addEventListener('click', toggleClass);
+  mobileMenuRef.addEventListener('click', toggleClass);
 };
 
 const closeMenu = () => {
   toggleClass();
-  mobileListRef.removeEventListener('click', toggleClass);
+  mobileMenuRef.removeEventListener('click', toggleClass);
 };
 
 burgerMenuBtn.addEventListener('click', () => {
